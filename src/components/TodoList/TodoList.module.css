@@ -8,4 +8,5 @@
 .list {
     flex : 1 1 auto;
     overflow-y : auto;
+    font-size : 109px;
 }

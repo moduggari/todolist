@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
+import styles from './AddTodo.module.css';
 
 const AddTodo = ({onAdd}) => {
     const [text, setText] = useState('');
@@ -15,8 +16,9 @@ const AddTodo = ({onAdd}) => {
         onAdd({id: uuidv4(), text, status : 'active'});
         setText('');
     }
+
     return (
-        <form onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={handleSubmit}>
             <input type='text' name='text' id='text' value={text} onChange={handleChange} />
             <button>추가하기</button>
         </form>

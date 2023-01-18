@@ -4,6 +4,7 @@
   --color-grey : #d1d1d1;
   --color-text : #22243b;
   --color-accent : #f16e03;
+  --color-white : #fff;
 }
 
 body {
@@ -18,9 +19,11 @@ body {
   
   width : 100vw;
   height : 100vh;
+  font-size : 1.2rem;
   display : flex;
   justify-content: center;
   align-items: center;
+  accent-color: var(--color-accent);
 }
 
 #root {
@@ -51,4 +54,8 @@ ul {
 button {
   outline : none;
   border : none;
+}
+
+* {
+  box-sizing : border-box;
 }

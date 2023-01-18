@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import styles from './TodoList.module.css';
 import { v4 as uuidv4 } from 'uuid';
 import AddTodo from '../AddTodo/AddTodo';
 import Todo from '../Todo/Todo';
-import styles from './TodoList.module.css';
+
 
 const TodoList = ({filter}) => {
     const [todos, setTodos] = useState([

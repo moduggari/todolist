@@ -19,8 +19,8 @@ const AddTodo = ({onAdd}) => {
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
-            <input type='text' name='text' id='text' value={text} onChange={handleChange} />
-            <button>추가하기</button>
+            <input className={styles.input} type='text' name='text' id='text' value={text} onChange={handleChange} />
+            <button className={styles.button}>추가하기</button>
         </form>
     );
 }
